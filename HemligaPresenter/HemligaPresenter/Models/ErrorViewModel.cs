@@ -1,5 +1,3 @@
-using System;
-
 namespace HemligaPresenter.Models {
     public class ErrorViewModel {
         public string RequestId { get; set; }
