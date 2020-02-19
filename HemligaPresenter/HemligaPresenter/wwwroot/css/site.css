@@ -1,13 +1,15 @@
 ﻿/* colours */
-/* #6b2d5c Palatinate Purple */
-/* #ff5376 Fiery Rose */
-/* #d81e5b Dogwood Rose */
-/* #f8c0c8 Pink */
-/* #e2c290 Pale Gold */
+/* #D7FFF1 Light Cyan */
+/* #AAFCB8 Magic Mint */
+/* #8CD790 Light Green */
+/* #77AF9C Green Sheen */
+/* #285943 Hunter Green */
 :root {
-    --nav-bg-color: #e2c290; /* Pale Gold */
-    --page-bg-color: #f8c0c8; /* Pink */
-    --page-text-color: #6b2d5c; /* Palatinate Purple */
+    --nav-bg-color: #285943; /* Hunter Green */
+    --nav-brand-color: #AAFCB8; /* Magic Mint */
+    --nav-text-color: #77AF9C; /* Green Sheen */
+    --page-bg-color: #AAFCB8; /* Magic Mint */
+    --page-text-color: #285943; /* Hunter Green */
 }
 
 body {
@@ -22,6 +24,14 @@ a.navbar-brand {
     white-space: normal;
     text-align: center;
     word-break: break-all;
+}
+
+.navbar-light .navbar-brand {
+    color: var(--nav-brand-color);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: var(--nav-text-color);
 }
 
 /* Provide sufficient contrast against white background */
