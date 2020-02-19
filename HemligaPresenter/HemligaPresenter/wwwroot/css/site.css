@@ -5,6 +5,7 @@
 /* #77AF9C Green Sheen */
 /* #285943 Hunter Green */
 :root {
+    --link-text-color: #0366d6; /* Blue */
     --nav-bg-color: #285943; /* Hunter Green */
     --nav-brand-color: #AAFCB8; /* Magic Mint */
     --nav-text-color: #77AF9C; /* Green Sheen */
@@ -36,7 +37,7 @@ a.navbar-brand {
 
 /* Provide sufficient contrast against white background */
 a {
-    color: #0366d6;
+    color: var(--link-text-color);
 }
 
 .btn-primary {
