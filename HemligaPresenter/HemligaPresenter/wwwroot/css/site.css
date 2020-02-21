@@ -9,6 +9,7 @@
     --nav-bg-color: #285943; /* Hunter Green */
     --nav-brand-color: #AAFCB8; /* Magic Mint */
     --nav-text-color: #77AF9C; /* Green Sheen */
+    --page-content-bg-color: #8CD790; /* Light Green */
     --page-bg-color: #AAFCB8; /* Magic Mint */
     --page-text-color: #285943; /* Hunter Green */
 }
@@ -21,6 +22,7 @@ body {
 .navbar {
     background-color: var(--nav-bg-color);
 }
+
 a.navbar-brand {
     white-space: normal;
     text-align: center;
@@ -99,4 +101,11 @@ body {
     width: 100%;
     white-space: nowrap;
     line-height: 60px; /* Vertically center the text there */
+}
+
+/* My styles */
+.site-main-content {
+    background-color: var(--page-content-bg-color);
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
 }
