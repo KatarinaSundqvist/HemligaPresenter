@@ -6,6 +6,9 @@
 /* #285943 Hunter Green */
 :root {
     --link-text-color: #0366d6; /* Blue */
+    --btn-primary-color: #D7FFF1; /* Light Cyan */
+    --btn-primary-hover-color: #AAFCB8; /* Magic Mint */
+    --btn-primary-txt-color: #285943; /* Hunter Green */
     --nav-bg-color: #285943; /* Hunter Green */
     --nav-brand-color: #AAFCB8; /* Magic Mint */
     --nav-text-color: #77AF9C; /* Green Sheen */
@@ -43,9 +46,15 @@ a {
 }
 
 .btn-primary {
-    color: #fff;
-    background-color: #1b6ec2;
-    border-color: #1861ac;
+    color: var(--btn-primary-txt-color);
+    background-color: var(--btn-primary-color);
+    border-color: var(--btn-primary-color);
+}
+
+.btn-primary:hover, .btn-primary:focus {
+    color: var(--btn-primary-txt-color);
+    background-color: var(--btn-primary-hover-color);
+    border-color: var(--btn-primary-hover-color);
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
