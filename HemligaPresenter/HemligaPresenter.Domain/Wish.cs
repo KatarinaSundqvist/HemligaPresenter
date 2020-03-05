@@ -8,7 +8,6 @@ namespace HemligaPresenter.Models {
         public string Link { get; set; }
         public string Description { get; set; }
         public bool StillOpen { get; set; } = true;
-        public WishList WishList { get; set; }
-        public int WishListId { get; set; }
+        public int MemberId { get; set; }
     }
 }

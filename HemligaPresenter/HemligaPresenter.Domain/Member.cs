@@ -1,8 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace HemligaPresenter.Models {
     public class Member {
+        public Member() {
+            Wishes = new List<Wish>();
+        }
         public int Id { get; set; }
         [Required]
         public string Name { get; set; }
@@ -17,7 +21,7 @@ namespace HemligaPresenter.Models {
         public Group Group { get; set; }
         public int GroupId { get; set; }
         public bool GroupOwner { get; set; }
-        public WishList WishList { get; set; }
-        public int WishListId { get; set; }
+        public List<Wish> Wishes { get; set; }
+        public int WishId { get; set; }
     }
 }
